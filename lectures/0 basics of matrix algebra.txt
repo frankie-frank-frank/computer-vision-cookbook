@@ -1,0 +1,27 @@
+TENSOR DIMENSIONALITY AND SHAPE:
+
+- 0D tensors --> 0 with shape of 0
+- 1D tensors --> [1,2,4] with shape of (3, )
+- 2D tensors -->
+    [
+        1 1 1
+        2 3 4
+    ] with shape of (2, 3)
+* A 3D tensor has (Ra, Rb, Rc) shape. Assume the 2D tensor above is stacked with another, the dimension will be (2, 2, 3)
+
+
+
+PROBABILITY DISTRIBUTION:
+- Uniform distribution - all items have equal probability of being picked
+- Normal distribution - items close to the middle have closer chance of being picked
+
+
+SELECTING VALUES FROM A TENSOR:
+given an a*b*...n shaped tensor, selecting from it results in a tensor with at least one dimension lower.
+
+
+3-D ARRAY MULTIPLICATION:
+C = A * B
+A : b, i, j --> WHERE b is the batch size
+B : b, j, k
+C: b, i, k
